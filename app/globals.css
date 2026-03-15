@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-earth-cream: #FFF8F3;
+  --color-earth-text: #3E3A35;
+  --color-earth-terracotta: #B8733E;
+  --color-earth-sage: #7A9B85;
+  --color-earth-border: #E8DFD5;
+  --color-earth-muted: #8C847C;
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  img {
+    border-radius: 20px;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Keep default interactive elements feeling remarkably smooth */
+  a, button, input {
+    transition: all 0.3s ease-in-out;
+  }
 }
