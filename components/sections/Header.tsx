@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="w-full h-[72px] bg-[#FFF8F3] sticky top-0 z-50 border-b border-[#E8DFD5]">
+    <header className="w-full h-[72px] bg-[#E2D6C6] sticky top-0 z-50 border-b border-[#E8DFD5]">
       <div className="container h-full flex items-center justify-between">
         <div className="text-[28px] font-serif text-[#3E3A35] tracking-wide mt-1">
           TERRA

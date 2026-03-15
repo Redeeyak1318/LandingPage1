@@ -3,16 +3,18 @@ export default function PromoSection() {
     <section className="relative w-full h-[600px] lg:h-[700px] flex flex-col items-center justify-center overflow-hidden bg-[#2A2825]">
       {/* Background Image / Dark area */}
       <div className="absolute inset-0">
-        <img 
-          src="/assets/promo.jpg" 
-          alt="Promo background" 
-          className="w-full h-full object-cover opacity-60"
+        <img
+          src="/assets/promo.jpg"
+          alt="Promo background"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
       </div>
-      
+
       {/* Overlay text simulating the "Image" watermark in background */}
-      <div className="absolute text-[15rem] md:text-[20rem] font-bold text-white/5 opacity-5 pointer-events-none select-none flex items-center justify-center inset-0 overflow-hidden leading-none tracking-tighter">
-        Image
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+        <span className="text-[12rem] md:text-[18rem] font-bold text-white/[0.03] leading-none tracking-tighter">
+          Image
+        </span>
       </div>
 
       <div className="relative z-10 text-center flex flex-col items-center px-6">

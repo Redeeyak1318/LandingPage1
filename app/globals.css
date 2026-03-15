@@ -23,7 +23,19 @@
   }
 
   /* Keep default interactive elements feeling remarkably smooth */
-  a, button, input {
+  a,
+  button,
+  input {
     transition: all 0.3s ease-in-out;
   }
+}
+
+body {
+  background: #EADBC8;
+}
+
+body {
+  background: linear-gradient(to bottom,
+      #EADBC8,
+      #ECE3D6);
 }

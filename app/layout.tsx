@@ -1,30 +1,28 @@
-import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+// app/layout.tsx
+
 import "./globals.css";
+import { Playfair_Display, Inter } from "next/font/google";
 
-const inter = Inter({
-  variable: "--font-inter",
+const serif = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400", "500"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const sans = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600"],
 });
-
-export const metadata: Metadata = {
-  title: "Earth Platform",
-  description: "Clean, elegant Next.js project template",
-};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} antialiased font-sans bg-earth-cream text-earth-text`}>
+    <html lang="en">
+      <body className={`${serif.variable} ${sans.variable} font-sans`}>
         {children}
       </body>
     </html>
