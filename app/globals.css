@@ -39,3 +39,14 @@ body {
       #EADBC8,
       #ECE3D6);
 }
+
+/* Hide scrollbar but keep scroll */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6C8B6;
+  border-radius: 10px;
+}
